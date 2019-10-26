@@ -18,4 +18,4 @@ I had trouble with the recyclerview, and getting a grasp at what all was going o
 User can see detailed view of movie in new activity
 Video is playable in fullscreen landscape
 ### App Walkthrough Gif
-<img src="https://media.giphy.com/media/kfpTjBREO07qgEt2CL/giphy.gif" width=250><br>
+<img src="https://media.giphy.com/media/kfpTjBREO07qgEt2CL/giphy.gif" width=270 height=480><br>
