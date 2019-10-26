@@ -3,21 +3,28 @@ package com.example.flixter.models;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.parceler.Parcel;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Parcel
 public class Movie {
+    int movieId;
     String posterPath;
     String title;
     String overview;
-    Long voteAverage;
+    String backdropPath;
+    Double rating;
 
+    public Movie(){}
     public Movie(JSONObject movie) throws JSONException {
         posterPath = movie.getString("poster_path");
         title = movie.getString("title");
         overview = movie.getString("overview");
-        voteAverage = movie.getLong("vote_average");
+        backdropPath = movie.getString("backdrop_path");
+        rating = movie.getDouble("vote_average");
+        movieId = movie.getInt("id");
     }
     public static List<Movie> fromJSONarray(JSONArray movieJSONarray) throws JSONException {
         List<Movie> movies = new ArrayList<>();
@@ -40,7 +47,14 @@ public class Movie {
         return overview;
     }
 
-    public Long getVoteAverage() {
-        return voteAverage;
+    public double getRating() {
+        return rating;
+    }
+    public String getBackdropPath() {
+        return backdropPath;
+    }
+
+    public int getMovieId() {
+        return movieId;
     }
 }
