@@ -14,8 +14,25 @@ I had trouble with the recyclerview, and getting a grasp at what all was going o
 
 - [Android Async HTTP](https://github.com/codepath/CPAsyncHttpClient) - Simple asynchronous HTTP requests with JSON parsing
 - [Glide](https://github.com/bumptech/glide) - Image loading and caching library for Androids
+
 ## Flix Part 2
+
+### User Stories
 User can see detailed view of movie in new activity
 Video is playable in fullscreen landscape
-### App Walkthrough Gif
-<img src="https://media.giphy.com/media/kfpTjBREO07qgEt2CL/giphy.gif" width=270 height=480><br>
+#### REQUIRED (10pts)
+
+- [x] (8pts) Expose details of movie (ratings using RatingBar, popularity, and synopsis) in a separate activity.
+- [x] (2pts) Allow video posts to be played in full-screen using the YouTubePlayerView.
+### App Walkthough GIF
+
+
+<img src="https://media.giphy.com/media/kfpTjBREO07qgEt2CL/giphy.gif" width=250><br>
+[GIF](https://media.giphy.com/media/kfpTjBREO07qgEt2CL/giphy.gif)
+### Notes
+
+Had a hard time figuring out the Youtube API.
+## Open-source libraries used
+- [Android Async HTTP](https://github.com/codepath/CPAsyncHttpClient) - Simple asynchronous HTTP requests with JSON parsing
+- [Glide](https://github.com/bumptech/glide) - Image loading and caching library for Android
+
